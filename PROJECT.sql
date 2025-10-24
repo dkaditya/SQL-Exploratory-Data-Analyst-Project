@@ -1,4 +1,4 @@
---
+--monthly and yearly sales and customer summary
 SELECT 
 YEAR(order_date) as order_year,
 MONTH(order_date) as order_month,
@@ -312,3 +312,4 @@ WITH base_query AS(
             END AS avg_monthly_revenue    
 			FROM product_aggregations
 		    
+
