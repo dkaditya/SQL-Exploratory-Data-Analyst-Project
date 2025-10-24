@@ -3,7 +3,7 @@
 ## Description
 This project contains a comprehensive set of SQL queries and views for analyzing sales, products, and customers in a data warehouse. It provides actionable insights and KPI calculations for business intelligence purposes.
 
-The single SQL file includes:
+The SQL file includes:
 
 - Monthly and yearly sales aggregation
 - Running totals and moving averages
@@ -26,21 +26,33 @@ The single SQL file includes:
 
 ---
 
+## Dataset
+This project **does not include the dataset**.  
+To run the queries and views, you need to provide your own data or create sample data for the following tables:
+
+- `fact_sales`  
+- `dim_products`  
+- `dim_customers`  
+
+You can create sample data using SQL `INSERT` statements or CSV files. Make sure the table structure matches the columns used in the queries.
+
+---
+
 ## How to Use
-1. Load the SQL file into your SQL database.
-2. Make sure the tables `gold.fact_sales`, `gold.dim_products`, and `gold.dim_customers` exist and are populated.
-3. Execute the queries in the file sequentially:
+1. Create the necessary tables (`fact_sales`, `dim_products`, `dim_customers`) in your database.  
+2. Load your own data or create sample data for testing.  
+3. Execute the SQL file sequentially:
    - Aggregation and analysis queries
    - Creation of reporting views
-4. Use the views `gold.report_customers` and `gold.report_products` to quickly get consolidated insights.
+4. Explore the views `gold.report_customers` and `gold.report_products` for consolidated insights.
 
 ---
 
 ## Project Highlights
-- Customer segmentation and KPIs (total sales, avg order value, monthly spend)
-- Product segmentation and performance metrics
-- Running totals, moving averages, and YoY comparison
-- Category-level sales contribution
+- Customer segmentation and KPIs (total sales, avg order value, monthly spend)  
+- Product segmentation and performance metrics  
+- Running totals, moving averages, and YoY comparison  
+- Category-level sales contribution  
 - Cost-based product segmentation
 
 ---
